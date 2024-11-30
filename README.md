@@ -13,20 +13,20 @@ A story constructed with sentences from Gutenberg Books using embedding similari
 
 4. Put data into a vector database (Chroma).
 
-5. From a start and end sequence:
+5. From a start and end sequences:
 "Once upon a time, in a land far away..."
 and "They lived happily ever after."
 
-6. Search for nearest neighbors. Pick closest sentence, and repeat using each sentence as a new search.
+  Search for nearest neighbors. Pick closest sentence, and repeat using each sentence as a new search.
 
-7. Generate half the text.
+6. Generate half the text, for a wordcount of 25000 words each.
 
-8. Reverse the order of the ending sentences, so they end with the "Happily Ever After" part.
+7. Reverse the order of the ending sentences, so they end with the "Happily Ever After" part.
 
-9. Use interpolation to generate 10 sentences of merger text that starts with the last sentence of 
+8. Use interpolation to generate 10 sentences of merger text that starts with the last sentence of 
 the first half, and ends with the first sentence of the second half (after reversing their order).
 
-10. Write them all to a markdown file, with the source title, author, distance score, and a code saying which section it is (start, end, interp).
+9.  Write them all to a markdown file, with the source title, author, distance score, and a code saying which section it is (start, end, interp).
 
 Output is in output.md.
 
