@@ -107,4 +107,17 @@ More structure would help the story, too but I wanted to do something simple.
 All the code parts (not the data) are here, mix of scripts and notebooks, but I will clean them up and document in mid-December.
 
 
+## More Tech Info and How-to's
+
+
+Embedding was done with simon willison's llm, from this post's info:
+[Embedding with ggufs](https://simonwillison.net/2024/Nov/21/llm-gguf-embeddings/). So you need to install llm and then use it to install the llm-gguf 
+
+This was done on a remote machine, because of Mac errors with running the llm llama files.
+
+In practice, I used llm to create the embeddings into sqlite, but then exported from sqlite to parquet and json. (All in the EmbedLLM.ipynb file.) I made a separate metadata lookup file with book info. 
+
+The ChromaStorySearch file is the search and then interpolation part. That is also discussed in [a blog post here](https://ghostweather.com/blog/posts/2025/01/interpolated-text-embeddings/).
+
+
 
